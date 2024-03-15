@@ -1,0 +1,121 @@
+// @import "../base/reset.scss";
+@import "../utils/mixins.scss";
+@import "../base/variables.scss";
+
+@font-face {
+    font-family: '';
+    src: url('../font/static/Jost-Bold.ttf') format('truetype');
+}
+
+body
+{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+
+main
+{
+    display: flex;
+
+    .rightSection, .leftSection
+    {
+        overflow: hidden;
+    }
+
+    .leftSection
+    {
+        width: 50%;
+        border: 1px solid;
+    }
+
+    .rightSection
+    {
+        width: 50%;
+        border: 1px solid red;
+    }
+}
+
+.leftSection
+{
+    background-color: $aquamarine;
+    padding: 4rem 8rem 5rem 8rem;
+
+    > *
+    {
+        margin: 4rem 0;
+        padding: 16px;
+        border: 1px solid;
+    }
+
+
+    .secondBloc, .thirdBloc
+    {
+        margin: 18rem 0;
+        text-align: right;
+    }
+}
+
+
+
+.leftSection .firstBloc
+{
+    height: 416px;
+    @include flex-positionning(column, space-between, end);
+
+    > *
+    {
+        display: block;
+        border: 1px solid black;
+    }
+
+    h1
+    {
+        font-size: 88px;
+        text-align: right;
+        border: 1px solid;
+    }
+
+    p
+    {
+        line-height: 32px;
+        text-align: right;
+        font-weight: 200;
+    }
+
+
+    img
+    {
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+    }
+}
+
+
+.leftSection .firstBloc p
+{
+    a
+    {
+        text-decoration: rgba(0, 0, 0, 0.5) underline dotted;
+    }
+}
+
+
+
+
+
+.rightSection
+{
+    .heroContentImg
+    {
+        height: 100vh;
+        border: 1px solid;
+    }
+}
+
+.rightSection .heroContentImg img
+{
+    height: 100%;
+    // width: 100%;
+    // transform: scale(1.1);
+}

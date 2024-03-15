@@ -1,0 +1,79 @@
+/*---------------------Colors-----------------------*/
+@font-face {
+  font-family: "";
+  src: url("../font/static/Jost-Bold.ttf") format("truetype");
+}
+body {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+}
+
+main {
+  display: flex;
+}
+main .rightSection, main .leftSection {
+  overflow: hidden;
+}
+main .leftSection {
+  width: 50%;
+  border: 1px solid;
+}
+main .rightSection {
+  width: 50%;
+  border: 1px solid red;
+}
+
+.leftSection {
+  background-color: #49fcd4;
+  padding: 4rem 8rem 5rem 8rem;
+}
+.leftSection > * {
+  margin: 4rem 0;
+  padding: 16px;
+  border: 1px solid;
+}
+.leftSection .secondBloc, .leftSection .thirdBloc {
+  margin: 18rem 0;
+  text-align: right;
+}
+
+.leftSection .firstBloc {
+  height: 416px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.leftSection .firstBloc > * {
+  display: block;
+  border: 1px solid black;
+}
+.leftSection .firstBloc h1 {
+  font-size: 88px;
+  text-align: right;
+  border: 1px solid;
+}
+.leftSection .firstBloc p {
+  line-height: 32px;
+  text-align: right;
+  font-weight: 200;
+}
+.leftSection .firstBloc img {
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.leftSection .firstBloc p a {
+  text-decoration: rgba(0, 0, 0, 0.5) underline dotted;
+}
+
+.rightSection .heroContentImg {
+  height: 100vh;
+  border: 1px solid;
+}
+
+.rightSection .heroContentImg img {
+  height: 100%;
+}
+
+/*# sourceMappingURL=index.css.map */

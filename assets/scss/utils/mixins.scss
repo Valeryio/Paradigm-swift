@@ -1,0 +1,7 @@
+@mixin flex-positionning($direction: horizontal, $first: normal, $second: normal)
+{
+    display: flex;
+    align-items: $second;
+    justify-content: $first;
+    flex-direction: $direction;
+}
