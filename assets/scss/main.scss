@@ -1,0 +1,17 @@
+/// Importing the abstracts files
+@import 'abstracts/mixins';
+
+/// Importing the base files
+@import 'base/reset.scss',
+        'base/typography.scss',
+        'base/variables';
+
+
+/// Importing the components files
+
+
+/// Importing the layout files
+
+
+/// Importing the pages files
+@import 'pages/index';
