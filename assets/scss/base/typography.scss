@@ -12,15 +12,25 @@ a
 a:link {
 }
 
-a:visited {
-    color:coral ;
+a:visited 
+{
+    color: rgb(40, 40, 40) ;
 }
 
-a:focus {
+a:focus 
+{
+    color: blueviolet;
+    text-decoration: dotted;
 }
 
-a:hover {
+a:hover 
+{
+    color: blueviolet;
+    text-decoration: dotted;
 }
 
-a:active {
+a:active 
+{
+    color: blueviolet;
+    text-decoration: dotted;
 }

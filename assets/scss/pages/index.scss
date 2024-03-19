@@ -3,13 +3,22 @@
 @import "../base/variables.scss";
 
 
+body
+{   
+    font-family: $ff-normal;
+}
+
+.hero-header-content
+{
+    padding: 88px 40px 32px;
+}
+
 
 h1
 {
     font-size: 4rem;
     line-height: 1.25;
     font-weight: 700;
-    font-family: $ff-normal;
     margin: -32px 0 24px;
 }
 
@@ -20,6 +29,27 @@ h1
     line-height: 2.5;
     letter-spacing: 0.175em;
     font-family: $ff-accent;
+}
+
+h2
+{
+    line-height: 1.75;
+    font-size: $fs-h2;
+    letter-spacing: 0.1em;
+}
+
+.platform-description
+{
+
+    padding: 48px 32px;
+
+    p
+    {
+        font-family: $ff-normal;
+        letter-spacing: 0.0375em;
+        font-weight: 400;
+        margin-bottom: 32px;
+    }
 }
 
 
