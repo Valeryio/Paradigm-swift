@@ -1,94 +1,181 @@
-* {
-  margin: 0;
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-body {
+* {
   margin: 0;
 }
 
-a {
-  color: black;
-  text-decoration: none;
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-/*---------------------Colors-----------------------*/
-/*---------------------Colors-----------------------*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+img {
+  width: 20px;
+}
+
 @font-face {
   font-family: "";
   src: url("../font/static/Jost-Bold.ttf") format("truetype");
 }
+/*---------------------Colors-----------------------*/
+/*---------------------Colors-----------------------*/
+/*---------------------Typos-----------------------*/
 body {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
 }
 
-main {
-  display: flex;
-}
-main .rightSection, main .leftSection {
-  overflow: hidden;
-}
-main .leftSection {
-  width: 50%;
-  border: 1px solid;
-}
-main .rightSection {
-  width: 50%;
-  border: 1px solid red;
-}
-
-.leftSection {
+.informative-section {
+  padding: 88px 40px 32px;
   background-color: #49fcd4;
-  padding: 4rem 8rem 5rem 8rem;
-}
-.leftSection > * {
-  margin: 4rem 0;
-  padding: 16px;
-  border: 1px solid;
-}
-.leftSection .secondBloc, .leftSection .thirdBloc {
-  margin: 18rem 0;
-  text-align: right;
 }
 
-.leftSection .firstBloc {
-  height: 416px;
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  flex-direction: column;
-}
-.leftSection .firstBloc > * {
-  display: block;
+section {
   border: 1px solid black;
 }
-.leftSection .firstBloc h1 {
-  font-size: 88px;
-  text-align: right;
-  border: 1px solid;
-}
-.leftSection .firstBloc p {
-  line-height: 32px;
-  text-align: right;
-  font-weight: 200;
-}
-.leftSection .firstBloc img {
-  width: 56px;
-  height: 56px;
-  cursor: pointer;
+
+/*---------------------Colors-----------------------*/
+/*---------------------Colors-----------------------*/
+/*---------------------Typos-----------------------*/
+/*
+body
+{
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
-.leftSection .firstBloc p a {
-  text-decoration: rgba(0, 0, 0, 0.5) underline dotted;
+
+a
+{
+    color: black;
+    text-decoration: none;
 }
 
-.right-section .hero-content-img {
-  height: 100vh;
-  border: 1px solid;
+
+main
+{
+    display: flex;
+
+    .rightSection, .leftSection
+    {
+        overflow: hidden;
+    }
+
+    .leftSection
+    {
+        width: 50%;
+        border: 1px solid;
+    }
+
+    .rightSection
+    {
+        width: 50%;
+        border: 1px solid red;
+    }
 }
 
-.right-section .hero-content-img img {
-  height: 100%;
+.leftSection
+{
+    background-color: $aquamarine;
+    padding: 4rem 8rem 5rem 8rem;
+
+    > *
+    {
+        margin: 4rem 0;
+        padding: 16px;
+        border: 1px solid;
+    }
+
+
+    .secondBloc, .thirdBloc
+    {
+        margin: 18rem 0;
+        text-align: right;
+    }
 }
+
+
+
+.leftSection .firstBloc
+{
+    height: 416px;
+    @include flex-positionning(column, space-between, end);
+
+    > *
+    {
+        display: block;
+        border: 1px solid black;
+    }
+
+    h1
+    {
+        font-size: 88px;
+        text-align: right;
+        border: 1px solid;
+    }
+
+    p
+    {
+        line-height: 32px;
+        text-align: right;
+        font-weight: 200;
+    }
+
+
+    img
+    {
+        width: 56px;
+        height: 56px;
+        cursor: pointer;
+    }
+}
+
+
+.leftSection .firstBloc p
+{
+    a
+    {
+        text-decoration: rgba(0, 0, 0, 0.5) underline dotted;
+    }
+}
+
+
+
+
+
+.right-section
+{
+    .hero-content-img
+    {
+        height: 100vh;
+        border: 1px solid;
+    }
+}
+
+.right-section .hero-content-img img
+{
+    height: 100%;
+    // width: 100%;
+    // transform: scale(1.1);
+}*/
 
 /*# sourceMappingURL=main.css.map */

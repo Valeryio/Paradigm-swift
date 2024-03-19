@@ -1,0 +1,17 @@
+body
+{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+}
+
+.informative-section
+{
+    padding: 88px 40px 32px;
+    background-color: $aquamarine;
+}
+
+section
+{
+    @include border();
+}
