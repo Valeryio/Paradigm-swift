@@ -2,3 +2,25 @@
     font-family: '';
     src: url('../font/static/Jost-Bold.ttf') format('truetype');
 }
+
+a
+{
+    color: black;
+    text-decoration: 1px dotted;
+}
+
+a:link {
+}
+
+a:visited {
+    color:coral ;
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}

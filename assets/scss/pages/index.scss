@@ -3,6 +3,26 @@
 @import "../base/variables.scss";
 
 
+
+h1
+{
+    font-size: 4rem;
+    line-height: 1.25;
+    font-weight: 700;
+    font-family: $ff-normal;
+    margin: -32px 0 24px;
+}
+
+.hero-description
+{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 2.5;
+    letter-spacing: 0.175em;
+    font-family: $ff-accent;
+}
+
+
 /*
 body
 {
