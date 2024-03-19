@@ -1,6 +1,7 @@
 // @import "../base/reset.scss";
 @import "../abstracts/mixins.scss";
 @import "../base/variables.scss";
+@import url(fontawesome-all.min.css);
 
 
 body
@@ -38,17 +39,50 @@ h2
     letter-spacing: 0.1em;
 }
 
+.values-container
+{
+    gap: 32px;
+    @include flex-positionning(center, start, vertical, wrap)
+
+}
+
+.value
+{
+    gap: 16px;
+    display: block;
+    width: 100%;
+    list-style: none;
+    @include flex-positionning();
+
+    svg
+    {
+        width: 48px;
+        padding: 8px;
+        border-radius: 50%;
+        background-color: rgb(229, 229, 229);
+    }
+
+    span
+    {
+        line-height: 2.75;
+    }
+}
+
 .platform-description
 {
 
+    gap: 32px;
     padding: 48px 32px;
+    @include border(2px, green);
+    @include flex-positionning(space-between, center, vertical);
 
     p
     {
         font-family: $ff-normal;
         letter-spacing: 0.0375em;
         font-weight: 400;
-        margin-bottom: 32px;
+        // margin-bottom: 32px;
+        font-size: 1rem;
     }
 }
 

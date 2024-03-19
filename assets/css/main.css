@@ -2,6 +2,7 @@
   Josh's Custom CSS Reset
   https://www.joshwcomeau.com/css/custom-css-reset/
 */
+@import url(fontawesome-all.min.css);
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -122,14 +123,51 @@ h2 {
   letter-spacing: 0.1em;
 }
 
+.values-container {
+  gap: 32px;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: vertical;
+}
+
+.value {
+  gap: 16px;
+  display: block;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  align-items: normal;
+  justify-content: horizontal;
+  flex-wrap: wrap;
+  flex-direction: horizontal;
+}
+.value svg {
+  width: 48px;
+  padding: 8px;
+  border-radius: 50%;
+  background-color: rgb(229, 229, 229);
+}
+.value span {
+  line-height: 2.75;
+}
+
 .platform-description {
+  gap: 32px;
   padding: 48px 32px;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: vertical;
 }
 .platform-description p {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   letter-spacing: 0.0375em;
   font-weight: 400;
-  margin-bottom: 32px;
+  font-size: 1rem;
 }
 
 /*
