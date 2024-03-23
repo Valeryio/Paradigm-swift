@@ -129,7 +129,7 @@ h2
 {
     object-fit: cover;
     min-height: 320px;
-    @include border(2px, red)
+    // @include border(2px, red)
 }
 
 
@@ -142,7 +142,7 @@ h2
 .contact-info
 {
     width: 100%;
-    @include border();
+    // @include border();
     line-height: 3rem;
 
     * >
@@ -170,7 +170,7 @@ h2
     @include flex-positionning();
 
     list-style: none;
-    @include border();
+    // @include border();
 }
 
 .footer-content

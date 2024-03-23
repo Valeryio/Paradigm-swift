@@ -97,7 +97,6 @@ body {
 
 section {
   background-color: white;
-  border: 1px solid black;
 }
 
 .informative-section {
@@ -129,7 +128,7 @@ section {
   height: 48px;
 }
 .primary-form textarea {
-  width: 436px;
+  max-width: 436px;
   height: 250px;
   resize: none;
 }
@@ -246,7 +245,6 @@ h2 {
 .special-img {
   object-fit: cover;
   min-height: 320px;
-  border: 2px solid red;
 }
 
 .contact-informations-box {
@@ -260,7 +258,6 @@ h2 {
 
 .contact-info {
   width: 100%;
-  border: 1px solid black;
   line-height: 3rem;
 }
 .contact-info a {
@@ -278,7 +275,6 @@ h2 {
   flex-wrap: wrap;
   flex-direction: horizontal;
   list-style: none;
-  border: 1px solid black;
 }
 
 .footer-content {
