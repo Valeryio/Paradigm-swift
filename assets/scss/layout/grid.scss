@@ -20,5 +20,42 @@ section
 {
     padding: 42px 32px;
     background-color: transparent;
-    background-color: $aquamarine;
+    // background-color: $aquamarine;
+}
+
+
+.platform-description
+{
+
+    gap: 32px;
+    padding: 48px 32px;
+    background-color: white;
+    // @include border(2px, green);
+    @include flex-positionning(space-between, center, vertical);
+
+    p
+    {
+        font-family: $ff-normal;
+        letter-spacing: 0.0375em;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) 
+{
+    body 
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(10, auto);
+    }
+
+    .informative-section
+    {
+        width: 400px;
+        @include border();
+    }
+    
 }

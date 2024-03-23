@@ -68,24 +68,6 @@ h2
     }
 }
 
-.platform-description
-{
-
-    gap: 32px;
-    padding: 48px 32px;
-    // @include border(2px, green);
-    @include flex-positionning(space-between, center, vertical);
-
-    p
-    {
-        font-family: $ff-normal;
-        letter-spacing: 0.0375em;
-        font-weight: 400;
-        font-size: 1rem;
-    }
-}
-
-
 .gallery-img-container
 {
     display: grid;
@@ -178,3 +160,5 @@ h2
     text-align: center;
     color: #c3c3c3;
 }
+
+

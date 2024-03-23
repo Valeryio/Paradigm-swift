@@ -68,15 +68,17 @@ a:active {
 /*---------------------Typos-----------------------*/
 /*---------------------Typos-----------------------*/
 .secondary-button, .primary-button {
-  width: 212px;
-  height: 60px;
+  max-width: 212px;
+  min-width: 164px;
+  max-height: 60px;
+  min-height: 56px;
   border-radius: 8px;
   font-family: "Raleway", Helvetica, sans-serif;
 }
 
 .primary-button {
   border: none;
-  margin-right: 1rem;
+  margin-right: 0.5rem calc(0rem + 0.1vw);
   background-color: #49fcd4;
 }
 
@@ -102,9 +104,36 @@ section {
 .informative-section {
   padding: 42px 32px;
   background-color: transparent;
-  background-color: #49fcd4;
 }
 
+.platform-description {
+  gap: 32px;
+  padding: 48px 32px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: vertical;
+}
+.platform-description p {
+  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  letter-spacing: 0.0375em;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, auto);
+  }
+  .informative-section {
+    width: 400px;
+    border: 1px solid black;
+  }
+}
 /*---------------------Colors-----------------------*/
 /*---------------------Colors-----------------------*/
 /*---------------------Typos-----------------------*/
@@ -194,22 +223,6 @@ h2 {
 }
 .value span {
   line-height: 2.75;
-}
-
-.platform-description {
-  gap: 32px;
-  padding: 48px 32px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: vertical;
-}
-.platform-description p {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
-  letter-spacing: 0.0375em;
-  font-weight: 400;
-  font-size: 1rem;
 }
 
 .gallery-img-container {

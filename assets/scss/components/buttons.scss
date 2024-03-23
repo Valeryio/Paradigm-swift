@@ -3,8 +3,10 @@
 
 %button
 {
-    width: 212px;
-    height: 60px;
+    max-width: 212px;
+    min-width: 164px;
+    max-height: 60px;
+    min-height: 56px;
     border-radius: 8px;
     font-family: $ff-accent;
 }
@@ -15,7 +17,7 @@
     @extend %button;
 
     border: none;
-    margin-right: 1rem;
+    margin-right: 0.5rem calc(0.0rem + 0.1vw);
     background-color: $aquamarine;
 }
 
