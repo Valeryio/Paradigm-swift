@@ -1,0 +1,31 @@
+
+@import "../abstracts/mixins.scss";
+@import "../base/variables.scss";
+
+
+.primary-form
+{
+    @include flex-positionning(start, center, wrap);
+
+    > *
+    {
+        border: 2px solid #efefef;
+        border-radius: 8px;
+        margin: 1rem 1rem;
+        padding: 1rem;
+        outline: none;
+    }
+
+    input
+    {
+        width: 202px;
+        height: 48px;
+    }
+
+    textarea
+    {
+        width: 436px;
+        height: 250px;
+        resize: none;
+    }
+}

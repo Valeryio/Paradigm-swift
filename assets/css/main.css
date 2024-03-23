@@ -112,6 +112,34 @@ section {
 /*---------------------Colors-----------------------*/
 /*---------------------Typos-----------------------*/
 /*---------------------Typos-----------------------*/
+.primary-form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  flex-direction: wrap;
+}
+.primary-form > * {
+  border: 2px solid #efefef;
+  border-radius: 8px;
+  margin: 1rem 1rem;
+  padding: 1rem;
+  outline: none;
+}
+.primary-form input {
+  width: 202px;
+  height: 48px;
+}
+.primary-form textarea {
+  width: 436px;
+  height: 250px;
+  resize: none;
+}
+
+/*---------------------Colors-----------------------*/
+/*---------------------Colors-----------------------*/
+/*---------------------Typos-----------------------*/
+/*---------------------Typos-----------------------*/
 body {
   font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
