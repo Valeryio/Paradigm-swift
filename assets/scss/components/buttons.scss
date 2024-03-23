@@ -1,0 +1,28 @@
+
+@import "../abstracts/mixins.scss";
+
+%button
+{
+    width: 212px;
+    height: 60px;
+    border-radius: 8px;
+    font-family: $ff-accent;
+}
+
+
+.primary-button
+{
+    @extend %button;
+
+    border: none;
+    margin-right: 1rem;
+    background-color: $aquamarine;
+}
+
+.secondary-button
+{
+    @extend %button;
+    
+    background-color: white;
+    border: 2px solid #efefef;
+}
