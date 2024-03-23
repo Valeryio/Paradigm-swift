@@ -1,4 +1,4 @@
-@mixin flex-positionning($inline: horizontal, $block: normal, $direction: horizontal, $wrap: wrap)
+@mixin flex-positionning($inline: normal, $block: normal, $direction: horizontal, $wrap: wrap)
 {
     display: flex;
     align-items: $block;

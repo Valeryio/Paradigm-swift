@@ -73,7 +73,7 @@ h2
 
     gap: 32px;
     padding: 48px 32px;
-    @include border(2px, green);
+    // @include border(2px, green);
     @include flex-positionning(space-between, center, vertical);
 
     p
@@ -99,13 +99,8 @@ h2
         max-height: fit-content;
         max-width: fit-content;
         overflow: hidden;
-        @include border();
+        // @include border();
     }
-}
-
-.gallery-img img
-{
-    // max-width: 100%;
 }
 
 .img-01, .img-04
@@ -135,4 +130,51 @@ h2
     object-fit: cover;
     min-height: 320px;
     @include border(2px, red)
+}
+
+
+.contact-informations-box
+{
+    gap: 1rem;
+    @include flex-positionning(center, center, vertical, wrap);
+}
+
+.contact-info
+{
+    width: 100%;
+    @include border();
+    line-height: 3rem;
+
+    * >
+    {
+        font-family: $ff-accent;
+    }
+
+    h3
+    {
+
+    }
+
+    a
+    {
+        // display: block;
+        text-decoration: 1px solid dotted;
+        -webkit-text-decoration: dotted;text-decoration: dotted;
+    }
+}
+
+.social-icons
+{
+    gap: 1rem;
+    padding: 0;
+    @include flex-positionning();
+
+    list-style: none;
+    @include border();
+}
+
+.footer-content
+{
+    text-align: center;
+    color: #c3c3c3;
 }

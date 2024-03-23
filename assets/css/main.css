@@ -43,7 +43,7 @@ img {
 }
 a {
   color: black;
-  text-decoration: 1px dotted;
+  text-decoration: dotted;
 }
 
 a:visited {
@@ -52,12 +52,10 @@ a:visited {
 
 a:focus {
   color: blueviolet;
-  text-decoration: dotted;
 }
 
 a:hover {
   color: blueviolet;
-  text-decoration: dotted;
 }
 
 a:active {
@@ -185,7 +183,7 @@ h2 {
   list-style: none;
   display: flex;
   align-items: normal;
-  justify-content: horizontal;
+  justify-content: normal;
   flex-wrap: wrap;
   flex-direction: horizontal;
 }
@@ -202,7 +200,6 @@ h2 {
 .platform-description {
   gap: 32px;
   padding: 48px 32px;
-  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -226,7 +223,6 @@ h2 {
   max-height: fit-content;
   max-width: fit-content;
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .img-01, .img-04 {
@@ -251,6 +247,43 @@ h2 {
   object-fit: cover;
   min-height: 320px;
   border: 2px solid red;
+}
+
+.contact-informations-box {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: vertical;
+}
+
+.contact-info {
+  width: 100%;
+  border: 1px solid black;
+  line-height: 3rem;
+}
+.contact-info a {
+  text-decoration: 1px solid dotted;
+  -webkit-text-decoration: dotted;
+  text-decoration: dotted;
+}
+
+.social-icons {
+  gap: 1rem;
+  padding: 0;
+  display: flex;
+  align-items: normal;
+  justify-content: normal;
+  flex-wrap: wrap;
+  flex-direction: horizontal;
+  list-style: none;
+  border: 1px solid black;
+}
+
+.footer-content {
+  text-align: center;
+  color: #c3c3c3;
 }
 
 /*# sourceMappingURL=main.css.map */
