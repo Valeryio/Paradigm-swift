@@ -26,11 +26,10 @@ section
 
 .platform-description
 {
-
-    gap: 32px;
+    gap: 32px 0;
+    height: 100%;
     padding: 48px 32px;
     background-color: white;
-    // @include border(2px, green);
     @include flex-positionning(space-between, center, vertical);
 
     p
@@ -42,12 +41,20 @@ section
     }
 }
 
+.section-r
+{
+    // grid-row: 16;
+}
+
 
 @media screen and (min-width: 600px) 
 {
     body 
     {
         display: grid;
+        justify-items: center;
+        align-items: center;
+        // grid-template-columns: 164px repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(10, auto);
     }
@@ -56,6 +63,11 @@ section
     {
         width: 400px;
         @include border();
+    }
+
+    .section-r
+    {
+        // grid-row: 18;
     }
     
 }

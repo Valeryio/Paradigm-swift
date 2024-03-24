@@ -107,7 +107,8 @@ section {
 }
 
 .platform-description {
-  gap: 32px;
+  gap: 32px 0;
+  height: 100%;
   padding: 48px 32px;
   background-color: white;
   display: flex;
@@ -126,6 +127,8 @@ section {
 @media screen and (min-width: 600px) {
   body {
     display: grid;
+    justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, auto);
   }
@@ -293,6 +296,8 @@ h2 {
 .footer-content {
   text-align: center;
   color: #c3c3c3;
+  margin: 2rem 1rem;
+  border: 1px solid;
 }
 
 /*# sourceMappingURL=main.css.map */
