@@ -20,7 +20,11 @@ section
 {
     padding: 42px 32px;
     background-color: transparent;
-    // background-color: $aquamarine;
+}
+
+.special-informative-section
+{
+    background-color: $aquamarine;
 }
 
 
@@ -43,7 +47,7 @@ section
 
 .section-r
 {
-    // grid-row: 16;
+    grid-row: 17;
 }
 
 
@@ -68,6 +72,8 @@ section
     .section-r
     {
         // grid-row: 18;
+        grid-row: 9;
+        grid-column: 2;
     }
-    
+
 }

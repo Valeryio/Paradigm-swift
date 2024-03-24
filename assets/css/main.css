@@ -106,6 +106,10 @@ section {
   background-color: transparent;
 }
 
+.special-informative-section {
+  background-color: #49fcd4;
+}
+
 .platform-description {
   gap: 32px 0;
   height: 100%;
@@ -124,6 +128,10 @@ section {
   font-size: 1rem;
 }
 
+.section-r {
+  grid-row: 17;
+}
+
 @media screen and (min-width: 600px) {
   body {
     display: grid;
@@ -135,6 +143,10 @@ section {
   .informative-section {
     width: 400px;
     border: 1px solid black;
+  }
+  .section-r {
+    grid-row: 9;
+    grid-column: 2;
   }
 }
 /*---------------------Colors-----------------------*/
@@ -160,7 +172,7 @@ section {
   height: 48px;
 }
 .primary-form textarea {
-  max-width: 436px;
+  min-width: 436px;
   height: 250px;
   resize: none;
 }
