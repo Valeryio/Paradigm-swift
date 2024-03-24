@@ -142,7 +142,6 @@ section {
   }
   .informative-section {
     width: 400px;
-    border: 1px solid black;
   }
   .section-r {
     grid-row: 9;

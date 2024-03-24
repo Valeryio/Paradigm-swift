@@ -58,7 +58,6 @@ section
         display: grid;
         justify-items: center;
         align-items: center;
-        // grid-template-columns: 164px repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(10, auto);
     }
@@ -66,12 +65,10 @@ section
     .informative-section
     {
         width: 400px;
-        @include border();
     }
 
     .section-r
     {
-        // grid-row: 18;
         grid-row: 9;
         grid-column: 2;
     }
