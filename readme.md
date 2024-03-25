@@ -1,6 +1,6 @@
 # Website Frontend integration
 
-![Design preview for the portfolio website in coding challenge](./assets/images/cover.jpg)
+![Design preview for the portfolio website in coding challenge](/assets/images/cover.jpg)
 
 ## Welcome! 👋
 
