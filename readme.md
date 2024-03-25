@@ -1,6 +1,6 @@
-# Figma to code Challenge, Week 4 
+# Website Frontend integration
 
-![Design preview for the portfolio website in coding challenge](/ressources/images/design-capture.jpg)
+![Design preview for the portfolio website in coding challenge](./assets/images/cover.jpg)
 
 ## Welcome! 👋
 
